@@ -1,6 +1,9 @@
 ## Weather Forecast App
 This is a simple weather app built using Open-WC Lit Element
 
+### Live App
+https://billyg83.github.io/weather-forecast/
+
 ### Start up
 You can clone this repo then run 'npm run start'
 
