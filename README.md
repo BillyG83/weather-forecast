@@ -1,11 +1,17 @@
 ## Weather Forecast App
 This is a simple weather app built using Open-WC Lit Element
 
-### Live App
-https://billyg83.github.io/weather-forecast/
-
 ### Start up
 You can clone this repo then run 'npm run start'
+
+### Storybook
+You can clone this repo then run 'npm run storybook'
+
+### Test
+You can clone this repo then run 'npm run test'
+
+### Properties / Attributes
+This app is APi worked but you can pass it a 'title' attribute
 
 ### Usage
 Type the name of a city you find to search and a list of matches are returned
