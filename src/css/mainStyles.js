@@ -1,4 +1,5 @@
-import { css } from 'lit-element';
+import { css, unsafeCSS } from 'lit-element';
+import colorVars from '../css/color-vars.js'
 
 export const mainStyles = css`
   :host {
@@ -16,7 +17,7 @@ export const mainStyles = css`
   }
   .header {
     align-items: center;
-    background-color: white;
+    background-color: ${unsafeCSS(colorVars.white)};
     display: flex;
     flex-direction: column;
     height: 20vh;
@@ -31,14 +32,14 @@ export const mainStyles = css`
     margin-bottom: 8px;
   }
   .header input {
-    background-color: #eee;
+    background-color: ${unsafeCSS(colorVars.grayLight)};
     padding: 8px;
     border-radius: 4px;
     border: none;
     text-align: center; 
   }
   .weather h2 {
-    background-color: white;
+    background-color: ${unsafeCSS(colorVars.white)};
     border: none;
     margin-bottom: 12px;
     padding: 16px 8px;
@@ -53,35 +54,35 @@ export const mainStyles = css`
     max-width: 1560px;
   }
   .weather__day {
-    background-color: white;
+    background-color: ${unsafeCSS(colorVars.white)};
     padding: 12px 24px;
     margin: 8px 16px 20px;
     width: 350px;
     max-width: 100%;
   }
   .weather__day.none {
-    border-top: 4px solid #eee;
-    border-bottom: 8px solid #eee;
+    border-top: 4px solid ${unsafeCSS(colorVars.none)};
+    border-bottom: 8px solid ${unsafeCSS(colorVars.none)};
   }
   .weather__day.lightBlue {
-    border-top: 4px solid #2193CC;
-    border-bottom: 8px solid #2193CC;
+    border-top: 4px solid ${unsafeCSS(colorVars.blueLight)};
+    border-bottom: 8px solid ${unsafeCSS(colorVars.blueLight)};
   }
   .weather__day.blue {
-    border-top: 4px solid #467D99;
-    border-bottom: 8px solid #467D99;
+    border-top: 4px solid ${unsafeCSS(colorVars.blue)};
+    border-bottom: 8px solid ${unsafeCSS(colorVars.blue)};
   }
   .weather__day.green {
-    border-top: 4px solid #0FFFCC;
-    border-bottom: 8px solid #0FFFCC;
+    border-top: 4px solid ${unsafeCSS(colorVars.green)};
+    border-bottom: 8px solid ${unsafeCSS(colorVars.green)};
   }
   .weather__day.red {
-    border-top: 4px solid #FF634F;
-    border-bottom: 8px solid #FF634F;
+    border-top: 4px solid ${unsafeCSS(colorVars.red)};
+    border-bottom: 8px solid ${unsafeCSS(colorVars.red)};
   }
   .weather__day.brown {
-    border-top: 4px solid #CC2133;
-    border-bottom: 8px solid #CC2133;
+    border-top: 4px solid ${unsafeCSS(colorVars.brown)};
+    border-bottom: 8px solid ${unsafeCSS(colorVars.brown)};
   }
 `
 

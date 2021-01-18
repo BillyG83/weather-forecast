@@ -461,6 +461,36 @@ const cityData = [
     "lat": "39.46975",
     "lng": "-0.37739"
   },
+  {
+    "country": "SA",
+    "name": "Mecca",
+    "lat": "21.42664",
+    "lng": "39.82563"
+  },
+  {
+    "country": "ART",
+    "name": "South Pole",
+    "lat": "90.0000",
+    "lng": "45.0000"
+  },
+  {
+    "country": "ART",
+    "name": "North Pole",
+    "lat": "90.0000",
+    "lng": "135.0000"
+  },
+  {
+    "country": "US",
+    "name": "Furnace Creek",
+    "lat": "36.4580",
+    "lng": "116.8709"
+  },
+  {
+    "country": "KW",
+    "name": "Kuwait City",
+    "lat": "29.36972",
+    "lng": "47.97833"
+  },
 ]
 
 export default cityData

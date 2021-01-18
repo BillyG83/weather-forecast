@@ -1,8 +1,9 @@
-import { css } from 'lit-element';
+import { css, unsafeCSS } from 'lit-element';
+import colorVars from '../css/color-vars.js'
 
 const citySelectorStyles = css`
   .city-select {
-    background-color: #eee;
+    background-color: ${unsafeCSS(colorVars.grayLight)};
     display: block;
     padding: 16px;
     text-align: center;

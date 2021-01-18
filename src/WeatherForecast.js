@@ -100,7 +100,7 @@ export class WeatherForecast extends LitElement {
         
             
         ${
-          this.currentCity.length > 0 
+          this.currentCity.length > 1 
           ?
             html`
               <city-selector 

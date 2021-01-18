@@ -1,6 +1,7 @@
 import { LitElement, html } from 'lit-element';
 import defaultStyles from '../css/styles.js'
 import weatherDayStyles from './weather-day.styles.js'
+import colorVars from '../css/color-vars.js'
 import 'fa-icons';
 
 export class WeatherDay extends LitElement {
@@ -28,35 +29,35 @@ export class WeatherDay extends LitElement {
     switch(true) {
       case this.dayData.temp.day <= -20:
         this.colorClass = 'none';
-        this.colorValue = '#ddd';
+        this.colorValue = colorVars.none;
         break;
       case this.dayData.temp.day > -20 && this.dayData.temp.day <= -1 :
         this.colorClass = 'lightBlue';
-        this.colorValue = '#2193CC';
+        this.colorValue = colorVars.blueLight;
         break;
       case this.dayData.temp.day > -1 && this.dayData.temp.day <= 10 :
         this.colorClass = 'blue';
-        this.colorValue = '#467D99';
+        this.colorValue = colorVars.blue;
         break;
       case this.dayData.temp.day > 10 && this.dayData.temp.day <= 25 :
         this.colorClass = 'green';
-        this.colorValue = '#0FFFCC';
+        this.colorValue = colorVars.green;
         break;
       case this.dayData.temp.day > 25 && this.dayData.temp.day <= 45 :
         this.colorClass = 'red';
-        this.colorValue = '#FF634F';
+        this.colorValue = colorVars.red;
         break;
-      case this.dayData.temp.day > 25 && this.dayData.temp.day <= 45 :
+      case this.dayData.temp.day > 45 :
         this.colorClass = 'brown';
-        this.colorValue = '#FCC2133';
+        this.colorValue = colorVars.brown;
         break;
       default:
         this.colorClass = 'none';
-        this.colorValue = '#ddd';
+        this.colorValue = colorVars.none;
     }
 
     return html`
-      <div class=${`weather__day day day-${this.index} border-${this.colorClass} ${this.dayData.weather[0].main.toLowerCase()}`}>
+      <div id=${`day-${this.index}`} class=${`weather__day border-${this.colorClass} ${this.dayData.weather[0].main.toLowerCase()}`}>
         <div class="day__heading">
           <div class="day__title">
             <h3>${this.dayData.day}</h3>

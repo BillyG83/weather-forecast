@@ -1,27 +1,31 @@
-import { css } from 'lit-element';
+import { css, unsafeCSS } from 'lit-element';
+import colorVars from '../css/color-vars.js'
 
 const defaultStyles = css`
   * {
     box-sizing: border-box;
-    color: #333;
+    color: ${unsafeCSS(colorVars.grayDark)};
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
   }
   .lightBlue {
-    color: #2193CC;
+    color: ${unsafeCSS(colorVars.blueLight)};
   }
   .blue {
-    color: #467D99;
+    color: ${unsafeCSS(colorVars.blue)};
   }
   .green {
-    color: #0FFFCC;
+    color: ${unsafeCSS(colorVars.green)};
   }
   .red {
-    color: #FF634F;
+    color: ${unsafeCSS(colorVars.red)};
   }
   .brown {
-    color: #CC2133;
+    color: ${unsafeCSS(colorVars.brown)};
+  }
+  .none {
+    color: ${unsafeCSS(colorVars.none)};
   }
 `
 export default defaultStyles
